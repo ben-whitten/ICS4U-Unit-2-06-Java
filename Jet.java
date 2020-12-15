@@ -1,0 +1,26 @@
+/*
+* The Jet program is an extension from the airplane program.
+*
+* @author  Ben Whitten
+* @version 1.0
+* @since   2020-12-15
+*/
+
+///////////////////////////////////////////////////////////////////////////////
+
+public class Jet extends Airplane {
+
+  private static final int MULTIPLIER = 2;
+  
+  public Jet() {
+    super();
+  }
+  
+  public void setSpeed(int speed) {
+    super.setSpeed(speed * MULTIPLIER);
+  }
+
+  public void accelerate() {
+    super.setSpeed(getSpeed() * 2);
+  }
+}
